@@ -38,9 +38,10 @@ I am a **Machine Learning Engineer & Researcher** specialized in building **resp
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 ![VertexAI](https://img.shields.io/badge/Vertex%20AI-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
 
-**Scale & Performance:**
-![Slurm](https://img.shields.io/badge/Slurm-004A81?style=for-the-badge&logo=linux&logoColor=white)
-`PyTorch-DDP` `Reinforcement Learning` `Deep Generative Models`
+**Scale & Performance:** ![Slurm](https://img.shields.io/badge/SLURM-004A81?style=for-the-badge&logo=linux&logoColor=white) 
+![PyTorch DDP](https://img.shields.io/badge/PYTORCH--DDP-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white) 
+![RL](https://img.shields.io/badge/REINFORCEMENT%20LEARNING-22C55E?style=for-the-badge&logo=google-mind&logoColor=white) 
+![Generative Models](https://img.shields.io/badge/DEEP%20GENERATIVE%20MODELS-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
 
 ---
 
