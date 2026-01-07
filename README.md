@@ -45,14 +45,6 @@ I am a **Machine Learning Engineer & Researcher** specialized in building **resp
 
 ---
 
-### 📊 GitHub Stats & Achievements
-
-![Hemant's Stats](https://github-readme-stats.vercel.app/api?username=HemantBK&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=HemantBK&layout=compact&theme=tokyonight&hide_border=true)
-
----
-
 ### 📬 Connect with Me
 <p align="left">
 <a href="https://linkedin.com/in/hemantbk" target="blank"><img align="center" src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
