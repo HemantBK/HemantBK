@@ -47,14 +47,11 @@ I am a **Machine Learning Engineer & Researcher** specialized in building **resp
 
 ### 📊 GitHub Stats & Achievements
 <p align="center">
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=HemantBK&theme=onedark&no-frame=true&margin-w=15&margin-h=15" alt="Hemant's Trophies" />
-  </a>
+  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=HemantBK&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" alt="Hemant's Stats" />
+  <img width="48%" src="https://github-readme-streak-stats.herokuapp.com/?user=HemantBK&theme=tokyonight&hide_border=true" alt="Hemant's Streak" />
 </p>
-
 <p align="center">
-  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=HemantBK&show_icons=true&theme=onedark&hide_border=true&rank_icon=github" alt="Hemant's Stats" />
-  <img width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=HemantBK&layout=compact&theme=onedark&hide_border=true" alt="Top Languages" />
+  <img width="100%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=HemantBK&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top Languages" />
 </p>
 
 ---
