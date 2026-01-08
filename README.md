@@ -16,16 +16,7 @@ I am a **Machine Learning Engineer & Researcher** specialized in building **resp
 
 ---
 
-### 📈 Impact by the Numbers
-| Metric | Achievement |
-| :--- | :--- |
-| **Accuracy** | +45% improvement in RAG response precision |
-| **Latency** | 30% reduction in system response time |
-| **Safety** | 95% reduction in harmful/toxic model outputs |
-| **Engagement** | 30% increase in user retention through personalized wellness logic |
-| **Efficiency** | 25% increase in ETL pipeline performance |
 
----
 
 ### 🛠️ Technical Arsenal
 **Languages & Core:** ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) 
