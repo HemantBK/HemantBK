@@ -11,7 +11,7 @@ I am a **Machine Learning Engineer & Researcher** specialized in building **resp
 ### 🚀 What I'm Building & Researching
 * **🛡️ [StepShield](https://github.com/Hemant-BK):** Developing a step-level safety benchmark for autonomous LLM code agents to detect rogue behavior (exfiltration, resource abuse) in real-time. *Targeting ICML 2026 publication.*
 * **🤖 Multi-Agent Systems:** Surveying MARL applications in cybersecurity, focusing on attacker-defender dynamics and interpretability.
-* **🎵 Generative Audio:** Fine-tuning PyTorch-based models to generate personalized meditation/wellness audio at **Escape LLC**.
+* **🎵 Generative Audio:** Fine-tuning PyTorch-based models to generate personalized meditation/wellness audio.
 * **🏗️ Agentic RAG:** Architecting high-accuracy mental health chatbots using **CrewAI** and **LangGraph** with 95% safety safeguards.
 
 ---
