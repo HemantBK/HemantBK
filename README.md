@@ -18,49 +18,64 @@
 
 ---
 
-## 🔬 Featured Research & Projects
+## 🔬 Research
+
+<table>
+<tr>
+<td>
+
+### 🛡️ StepShield — *Co-Author* &nbsp; [![Paper](https://img.shields.io/badge/arXiv-2601.22136-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2601.22136) [![ICML 2026](https://img.shields.io/badge/ICML_2026-Submitted-blue?style=flat-square)](https://arxiv.org/abs/2601.22136)
+
+First benchmark for evaluating when autonomous code agents go rogue — not just whether they do. Detects specification violations (data exfiltration, unauthorized access) in real-time across **9,213 agent trajectories**. Early detection cuts monitoring costs by **75%** (~$108M projected savings).
+
+`Python` `PyTorch` `LLM Safety` `Red-Teaming` `Autonomous Agents`
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🚀 Featured Projects
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### 🛡️ StepShield — *Co-Author*
-**Safety benchmark for autonomous LLM code agents**
+### 💰 Dynamic Pricing Engine
+**Production-grade ML pricing system**
 
-Detects specification violations (data exfiltration, unauthorized access) in real-time across 9,213 agent trajectories. Early detection cuts monitoring costs by 75% (~$108M projected savings). **Submitted to ICML 2026.**
+XGBoost demand forecasting + price elasticity estimation + scipy revenue optimization. FastAPI serving, Streamlit dashboard, MLflow tracking, Evidently drift monitoring.
 
-`Python` `PyTorch` `LLM Safety` `Red-Teaming`
+`Python` `XGBoost` `FastAPI` `MLflow` `Streamlit`
 
-[![Paper](https://img.shields.io/badge/arXiv-2601.22136-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2601.22136)
-[![ICML 2026](https://img.shields.io/badge/ICML_2026-Submitted-blue?style=flat-square)](https://arxiv.org/abs/2601.22136)
-[![Code](https://img.shields.io/badge/GitHub-Repo-181717?style=flat-square&logo=github)](https://github.com/HemantBK/StepShield)
+[![Code](https://img.shields.io/badge/GitHub-Repo-181717?style=flat-square&logo=github)](https://github.com/HemantBK/dynamic-pricing-engine)
 
 </td>
 <td width="50%" valign="top">
 
-### 🤖 Agentic RAG Chatbot
-**Production-grade mental health support system**
+### 🗣️ AI Voice Assistant
+**Full-stack speech pipeline: STT → LLM → TTS**
 
-Built with CrewAI, LangChain, LangGraph + PostgreSQL. Implements bias detection, toxicity filtering, and empathy safeguards. 45% accuracy improvement, 30% latency reduction.
+End-to-end voice assistant with FastAPI backend, React frontend, and Docker containerization. Speech-to-Text, LLM reasoning, and Text-to-Speech in one pipeline.
 
-`LangChain` `CrewAI` `RAG` `Responsible AI`
+`JavaScript` `FastAPI` `React` `Docker` `LLM`
 
-[![Code](https://img.shields.io/badge/GitHub-Repo-181717?style=flat-square&logo=github)](https://github.com/HemantBK/agentic-rag-chatbot)
-[![Demo](https://img.shields.io/badge/🤗_Demo-Live-yellow?style=flat-square)](https://huggingface.co/spaces/HemantBK/rag-demo)
+[![Code](https://img.shields.io/badge/GitHub-Repo-181717?style=flat-square&logo=github)](https://github.com/HemantBK/AI-Voice-Assistant)
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-### 🎯 Multi-Agent RL for Cybersecurity
-**MARL-based intrusion detection & defense**
+### 🌐 Multilingual Sentiment & Emotion Engine
+**5 languages + Hindi-English code-switching**
 
-Surveying attacker-defender dynamics in distributed systems. Benchmarking QMIX, MAPPO, and VDN across adversarial environments with interpretability analysis.
+Multi-task XLM-RoBERTa with LoRA adapters, ONNX INT8 inference, and cross-lingual transfer. Production-grade multilingual NLP pipeline.
 
-`PyTorch` `MARL` `Reinforcement Learning` `Cybersecurity`
+`Python` `XLM-RoBERTa` `LoRA` `ONNX` `NLP`
 
-[![Code](https://img.shields.io/badge/GitHub-Repo-181717?style=flat-square&logo=github)](https://github.com/HemantBK/marl-cybersecurity)
+[![Code](https://img.shields.io/badge/GitHub-Repo-181717?style=flat-square&logo=github)](https://github.com/HemantBK/Multilingual-Sentiment-Emotion-Intelligence-Engine)
 
 </td>
 <td width="50%" valign="top">
@@ -70,35 +85,9 @@ Surveying attacker-defender dynamics in distributed systems. Benchmarking QMIX, 
 
 Combines NLP sentiment analysis on financial headlines with quantitative indicators. TimeGPT predictions + Power BI dashboard. 20% higher prediction accuracy.
 
-`NLP` `TimeGPT` `Sentiment Analysis` `Finance`
+`Python` `NLP` `TimeGPT` `Sentiment Analysis`
 
 [![Code](https://img.shields.io/badge/GitHub-Repo-181717?style=flat-square&logo=github)](https://github.com/HemantBK/Algorithmic-Trading-AI)
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 🎵 Generative Audio for Wellness
-**Personalized meditation audio generation**
-
-Fine-tuning PyTorch-based generative models to create personalized meditation and wellness audio content.
-
-`PyTorch` `Generative Models` `Audio ML`
-
-[![Code](https://img.shields.io/badge/GitHub-Repo-181717?style=flat-square&logo=github)](https://github.com/HemantBK/generative-audio)
-
-</td>
-<td width="50%" valign="top">
-
-### ⚙️ ML Pipeline & Infrastructure
-**End-to-end MLOps with safety guardrails**
-
-Production ML pipelines with CI/CD, Docker containerization, model monitoring, drift detection, and automated retraining. Built across Escape LLC and Omdena projects.
-
-`Docker` `FastAPI` `GitHub Actions` `MLflow`
-
-[![Code](https://img.shields.io/badge/GitHub-Repo-181717?style=flat-square&logo=github)](https://github.com/HemantBK/mlops-pipeline)
 
 </td>
 </tr>
@@ -169,25 +158,6 @@ Production ML pipelines with CI/CD, Docker containerization, model monitoring, d
 </td>
 </tr>
 </table>
-
----
-
-## 🏅 Certifications
-
-<p>
-  <img src="https://img.shields.io/badge/Oracle-OCI_Gen_AI_Professional_2025-F80000?style=flat-square&logo=oracle&logoColor=white" alt="Oracle GenAI"/>
-  <img src="https://img.shields.io/badge/Oracle-AI_Vector_Search-F80000?style=flat-square&logo=oracle&logoColor=white" alt="Oracle Vector"/>
-  <img src="https://img.shields.io/badge/Oracle-OCI_Data_Science_2023-F80000?style=flat-square&logo=oracle&logoColor=white" alt="Oracle DS"/>
-  <img src="https://img.shields.io/badge/Udacity-AWS_AI_Scientist-02B3E4?style=flat-square&logo=udacity&logoColor=white" alt="Udacity AWS"/>
-  <img src="https://img.shields.io/badge/Google-IT_Automation_with_Python-4285F4?style=flat-square&logo=google&logoColor=white" alt="Google IT"/>
-</p>
-
----
-
-## 🎓 Education
-
-**M.S. Information Science** — University of Arizona *(GPA: 3.67/4.0)* | 2023–2025  
-**B.E. Mechanical Engineering** — Visvesvaraya Technological University | 2018–2022
 
 ---
 
