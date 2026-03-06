@@ -1,18 +1,13 @@
 <h1 align="center">Hemant Kumar B K</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&pause=1000&color=22C55E&center=true&vCenter=true&width=500&lines=ML+Engineer+%7C+AI+Safety+Researcher;Building+Trustworthy+AI+Systems;Multi-Agent+RL+%C2%B7+LLM+Safety+%C2%B7+RAG;PyTorch+%C2%B7+AWS+%C2%B7+Docker+%C2%B7+FastAPI" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&pause=1000&color=22C55E&center=true&vCenter=true&width=600&lines=ML+Engineer+%7C+AI+Safety+Researcher;Multi-Agent+RL+%C2%B7+LLM+Safety+%C2%B7+RAG;PyTorch+%C2%B7+AWS+%C2%B7+Docker+%C2%B7+FastAPI" alt="Typing SVG" />
 </p>
 
 <p align="center">
   <a href="https://linkedin.com/in/hemantbk"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
   <a href="mailto:hemantkumar.bk@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-  <a href="https://scholar.google.com/citations?user=YOUR_ID"><img src="https://img.shields.io/badge/Google_Scholar-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white" alt="Scholar"/></a>
-  <a href="https://hemantkumar-bk-9abzfw9.gamma.site/"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/></a>
-</p>
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=HemantBK&style=flat-square&color=22C55E" alt="Profile views"/>
+  <a href="https://arxiv.org/abs/2601.22136"><img src="https://img.shields.io/badge/arXiv-StepShield-B31B1B?style=for-the-badge&logo=arxiv&logoColor=white" alt="arXiv"/></a>
 </p>
 
 ---
@@ -177,24 +172,22 @@ Production ML pipelines with CI/CD, Docker containerization, model monitoring, d
 
 ---
 
-## 📊 GitHub Stats
+## 🏅 Certifications
 
-<p align="center">
-  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=HemantBK&show_icons=true&theme=github_dark&hide_border=true&count_private=true" alt="GitHub Stats"/>
-  <img width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=HemantBK&layout=compact&theme=github_dark&hide_border=true&hide=jupyter%20notebook" alt="Top Languages"/>
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=HemantBK&theme=github-dark-blue&hide_border=true" alt="GitHub Streak"/>
+<p>
+  <img src="https://img.shields.io/badge/Oracle-OCI_Gen_AI_Professional_2025-F80000?style=flat-square&logo=oracle&logoColor=white" alt="Oracle GenAI"/>
+  <img src="https://img.shields.io/badge/Oracle-AI_Vector_Search-F80000?style=flat-square&logo=oracle&logoColor=white" alt="Oracle Vector"/>
+  <img src="https://img.shields.io/badge/Oracle-OCI_Data_Science_2023-F80000?style=flat-square&logo=oracle&logoColor=white" alt="Oracle DS"/>
+  <img src="https://img.shields.io/badge/Udacity-AWS_AI_Scientist-02B3E4?style=flat-square&logo=udacity&logoColor=white" alt="Udacity AWS"/>
+  <img src="https://img.shields.io/badge/Google-IT_Automation_with_Python-4285F4?style=flat-square&logo=google&logoColor=white" alt="Google IT"/>
 </p>
 
 ---
 
-## 📝 Latest Activity
+## 🎓 Education
 
-<!--START_SECTION:activity-->
-<!-- This section auto-updates with GitHub Actions — see: https://github.com/jamesgeorge007/github-activity-readme -->
-<!--END_SECTION:activity-->
+**M.S. Information Science** — University of Arizona *(GPA: 3.67/4.0)* | 2023–2025  
+**B.E. Mechanical Engineering** — Visvesvaraya Technological University | 2018–2022
 
 ---
 
