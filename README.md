@@ -42,6 +42,44 @@ First benchmark for evaluating when autonomous code agents go rogue — not just
 <tr>
 <td width="50%" valign="top">
 
+### 🛡️ LLM Eval Pipeline
+**Production-grade LLM evaluation + red-teaming**
+
+Hybrid n8n + FastAPI architecture with 4 LLM providers, LLM-as-Judge scoring, circuit breaker, DLQ, Redis caching, Prometheus/Grafana monitoring.
+
+`Python` `FastAPI` `Redis` `Prometheus` `Red-Teaming`
+
+[![Code](https://img.shields.io/badge/GitHub-Repo-181717?style=flat-square&logo=github)](https://github.com/HemantBK/llm-eval-pipeline)
+
+</td>
+<td width="50%" valign="top">
+
+### 🔐 MLShield
+**ML-infra-aware defense for model weights**
+
+Protects against model-weight exfiltration using a 3-layer cascaded architecture (Rules → ML → LLM). Kubernetes-native, GPU-aware anomaly detection.
+
+`Python` `Kubernetes` `Model Security` `Anomaly Detection`
+
+[![Code](https://img.shields.io/badge/GitHub-Repo-181717?style=flat-square&logo=github)](https://github.com/HemantBK/MLShield)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### ⚖️ LLM Bias Sentinel
+**7-benchmark bias evaluation + guardrails**
+
+Open-source LLM bias evaluation framework with red-teaming, guardrails, and monitoring — all running locally via Ollama. Zero API costs.
+
+`Python` `Ollama` `Red-Teaming` `Guardrails` `Responsible AI`
+
+[![Code](https://img.shields.io/badge/GitHub-Repo-181717?style=flat-square&logo=github)](https://github.com/HemantBK/llm-bias-sentinel)
+
+</td>
+<td width="50%" valign="top">
+
 ### 💰 Dynamic Pricing Engine
 **Production-grade ML pricing system**
 
@@ -52,42 +90,30 @@ XGBoost demand forecasting + price elasticity estimation + scipy revenue optimiz
 [![Code](https://img.shields.io/badge/GitHub-Repo-181717?style=flat-square&logo=github)](https://github.com/HemantBK/dynamic-pricing-engine)
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 ### 🗣️ AI Voice Assistant
 **Full-stack speech pipeline: STT → LLM → TTS**
 
-End-to-end voice assistant with FastAPI backend, React frontend, and Docker containerization. Speech-to-Text, LLM reasoning, and Text-to-Speech in one pipeline.
+End-to-end voice assistant running entirely on your own machine — FastAPI backend, React frontend, Docker. Private by design: zero cloud calls.
 
-`JavaScript` `FastAPI` `React` `Docker` `LLM`
+`Python` `FastAPI` `React` `Docker` `LLM`
 
 [![Code](https://img.shields.io/badge/GitHub-Repo-181717?style=flat-square&logo=github)](https://github.com/HemantBK/AI-Voice-Assistant)
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
-### 🌐 Multilingual Sentiment & Emotion Engine
-**5 languages + Hindi-English code-switching**
+### 🏍️ RideShala
+**AI motorcycle advisor for Indian riders**
 
-Multi-task XLM-RoBERTa with LoRA adapters, ONNX INT8 inference, and cross-lingual transfer. Production-grade multilingual NLP pipeline.
+RAG over motorcycle specs with vLLM serving, Qdrant vector store, FastAPI. Personalized bike recommendations with source citations.
 
-`Python` `XLM-RoBERTa` `LoRA` `ONNX` `NLP`
+`Python` `vLLM` `RAG` `Qdrant` `FastAPI`
 
-[![Code](https://img.shields.io/badge/GitHub-Repo-181717?style=flat-square&logo=github)](https://github.com/HemantBK/Multilingual-Sentiment-Emotion-Intelligence-Engine)
-
-</td>
-<td width="50%" valign="top">
-
-### 📈 AI-Driven Algorithmic Trading
-**Sentiment-aware stock prediction system**
-
-Combines NLP sentiment analysis on financial headlines with quantitative indicators. TimeGPT predictions + Power BI dashboard. 20% higher prediction accuracy.
-
-`Python` `NLP` `TimeGPT` `Sentiment Analysis`
-
-[![Code](https://img.shields.io/badge/GitHub-Repo-181717?style=flat-square&logo=github)](https://github.com/HemantBK/Algorithmic-Trading-AI)
+[![Code](https://img.shields.io/badge/GitHub-Repo-181717?style=flat-square&logo=github)](https://github.com/HemantBK/RideShala)
 
 </td>
 </tr>
@@ -95,11 +121,33 @@ Combines NLP sentiment analysis on financial headlines with quantitative indicat
 
 ---
 
+## 📂 All Projects
+
+### 🛡️ AI Safety & Responsible AI
+
+- **[chatbot-auditor](https://github.com/HemantBK/chatbot-auditor)** — Quality auditor for AI chatbots; analyzes conversation logs to surface where bots underperform.
+- **[credit-scoring-fairness-mlops](https://github.com/HemantBK/credit-scoring-fairness-mlops)** — End-to-end MLOps with automated fairness gates, drift monitoring, EU AI Act compliance (XGBoost, Fairlearn, MLflow).
+- **[healthcare-bias-audit](https://github.com/HemantBK/healthcare-bias-audit)** — Bias audit of healthcare ML on the MEPS dataset; AIF360 mitigation, SHAP/LIME explainability.
+
+### 🤖 LLM Systems & RAG
+
+- **[AI-Chief](https://github.com/HemantBK/AI-Chief)** — Food science assistant with multi-agent RAG, real-time safety monitoring, dangerous-advice detection (TypeScript, Fastify, HNSW).
+- **[Interactive-Multilingual-AI-Audiobook-Assistant](https://github.com/HemantBK/Interactive-Multilingual-AI-Audiobook-Assistant)** — OCR extraction → neural TTS → multilingual translation → real-time Q&A audiobook pipeline.
+- **[AI-Wildlife-Tracker](https://github.com/HemantBK/AI-Wildlife-Tracker)** — RAG identifying 500+ Indian wildlife species from text or photos; hybrid retrieval, ONNX inference, Langfuse observability.
+
+### ⚙️ Applied ML & MLOps
+
+- **[Multilingual-Sentiment-Emotion-Intelligence-Engine](https://github.com/HemantBK/Multilingual-Sentiment-Emotion-Intelligence-Engine)** — 5 languages + Hindi-English code-switching; multi-task XLM-RoBERTa with LoRA adapters, ONNX INT8.
+- **[Algorithmic-Trading-AI](https://github.com/HemantBK/Algorithmic-Trading-AI)** — FinBERT sentiment + spaCy NER + TimeGPT forecasting → BUY/SELL/HOLD signals from real-time financial news.
+- **[LLaMA-Sum-Fine-Tuning](https://github.com/HemantBK/LLaMA-Sum-Fine-Tuning)** — LLaMA 3.2 1B fine-tuned via QLoRA; 40%+ ROUGE-2 improvement over base on CNN/DailyMail.
+
+---
+
 ## 🛠️ Tech Stack
 
 <table>
 <tr>
-<td><b>Languages</b></td>
+<td><b>💻 Languages</b></td>
 <td>
 
 ![Python](https://img.shields.io/badge/Python-3670A0?style=flat-square&logo=python&logoColor=ffdd54)
@@ -111,7 +159,7 @@ Combines NLP sentiment analysis on financial headlines with quantitative indicat
 </td>
 </tr>
 <tr>
-<td><b>ML & DL</b></td>
+<td><b>🤖 ML / DL</b></td>
 <td>
 
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
@@ -123,34 +171,61 @@ Combines NLP sentiment analysis on financial headlines with quantitative indicat
 </td>
 </tr>
 <tr>
-<td><b>LLM & Agents</b></td>
+<td><b>🧠 LLM & Agents</b></td>
 <td>
 
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
+![vLLM](https://img.shields.io/badge/vLLM-7C3AED?style=flat-square&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white)
+![ONNX](https://img.shields.io/badge/ONNX-005CED?style=flat-square&logo=onnx&logoColor=white)
 ![CrewAI](https://img.shields.io/badge/CrewAI-000000?style=flat-square&logoColor=white)
 ![RAG](https://img.shields.io/badge/RAG-7C3AED?style=flat-square&logoColor=white)
-![Prompt Engineering](https://img.shields.io/badge/Prompt_Eng-22C55E?style=flat-square&logoColor=white)
 
 </td>
 </tr>
 <tr>
-<td><b>MLOps & Cloud</b></td>
+<td><b>🛠️ MLOps / Cloud</b></td>
 <td>
 
 ![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazon-aws&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white)
-![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=mlflow&logoColor=white)
 ![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=google-cloud&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=mlflow&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white)
 
 </td>
 </tr>
 <tr>
-<td><b>Data</b></td>
+<td><b>📊 Observability</b></td>
+<td>
+
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
+![Evidently](https://img.shields.io/badge/Evidently-ED0606?style=flat-square&logoColor=white)
+![Langfuse](https://img.shields.io/badge/Langfuse-4B5563?style=flat-square&logoColor=white)
+
+</td>
+</tr>
+<tr>
+<td><b>🛡️ AI Safety & Responsible AI</b></td>
+<td>
+
+![Red Teaming](https://img.shields.io/badge/Red_Teaming-B91C1C?style=flat-square&logoColor=white)
+![AIF360](https://img.shields.io/badge/AIF360-2563EB?style=flat-square&logoColor=white)
+![Fairlearn](https://img.shields.io/badge/Fairlearn-0EA5E9?style=flat-square&logoColor=white)
+![SHAP](https://img.shields.io/badge/SHAP-8B5CF6?style=flat-square&logoColor=white)
+![Guardrails](https://img.shields.io/badge/Guardrails-059669?style=flat-square&logoColor=white)
+
+</td>
+</tr>
+<tr>
+<td><b>🗄️ Data</b></td>
 <td>
 
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
 ![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=power-bi&logoColor=black)
 ![Tableau](https://img.shields.io/badge/Tableau-E97627?style=flat-square&logo=tableau&logoColor=white)
