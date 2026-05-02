@@ -237,6 +237,6 @@ RAG over motorcycle specs with vLLM serving, Qdrant vector store, FastAPI. Perso
 ---
 
 <p align="center">
-  <b>Open to ML Engineer, AI Safety, and AI Researcher roles — remote & relocation</b><br/>
+  <b>Open to ML Engineer, AI Safety, and AI Researcher roles</b><br/>
   <i>Let's build AI systems that are powerful AND trustworthy.</i>
 </p>
