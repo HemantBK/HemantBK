@@ -12,7 +12,7 @@
 
 ---
 
-**ML Engineer building production-grade AI systems with safety at the core.** Currently researching Multi-Agent RL for cybersecurity at the University of Arizona and co-authoring [StepShield](https://arxiv.org/abs/2601.22136) — a safety benchmark for autonomous code agents (submitted to ICML 2026). Previously built recommendation engines at Escape LLC (30% engagement lift) and agentic RAG chatbots at Omdena (95% reduction in harmful responses).
+**ML Engineer building production-grade AI systems with safety at the core.** Currently researching Multi-Agent RL for cybersecurity at the University of Arizona and co-authoring [StepShield](https://arxiv.org/abs/2601.22136) — a safety benchmark for autonomous code agents (targeting ICML 2027). Previously built recommendation engines at Escape LLC (30% engagement lift) and agentic RAG chatbots at Omdena (95% reduction in harmful responses).
 
 **I don't treat AI safety as a checkbox — I treat it as an engineering discipline.**
 
