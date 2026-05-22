@@ -24,7 +24,7 @@
 <tr>
 <td>
 
-### 🛡️ StepShield — *Co-Author* &nbsp; [![Paper](https://img.shields.io/badge/arXiv-2601.22136-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2601.22136) [![ICML 2026](https://img.shields.io/badge/ICML_2026-Submitted-blue?style=flat-square)](https://arxiv.org/abs/2601.22136)
+### 🛡️ StepShield — *Co-Author* &nbsp; [![Paper](https://img.shields.io/badge/arXiv-2601.22136-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2601.22136) [![ICML 2027](https://img.shields.io/badge/ICML_2027-Targeting-blue?style=flat-square)](https://arxiv.org/abs/2601.22136)
 
 First benchmark for evaluating when autonomous code agents go rogue — not just whether they do. Detects specification violations (data exfiltration, unauthorized access) in real-time across **9,213 agent trajectories**. Early detection cuts monitoring costs by **75%** (~$108M projected savings).
 
