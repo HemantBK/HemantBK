@@ -17,26 +17,26 @@ MATS Summer 2026 fellow (Asymmetric Security stream).
 <table>
 <tr>
 <td valign="top">
-<h3><a href="https://arxiv.org/abs/2601.22136">StepShield: When, Not Whether to Intervene on Rogue Agents</a> &nbsp; <a href="https://arxiv.org/abs/2601.22136"><img src="https://img.shields.io/badge/arXiv-2601.22136-B31B1B?style=flat-square&logo=arxiv&logoColor=white" alt="arXiv"></a> <img src="https://img.shields.io/badge/NeurIPS_2026-JUDGe_%26_IAB_Workshops_%C2%B7_Poster-1F6FEB?style=flat-square" alt="NeurIPS 2026 workshops, poster"></h3>
+<h3><a href="https://arxiv.org/abs/2601.22136">StepShield: When, Not Whether to Intervene on Rogue Agents</a> &nbsp; <a href="https://arxiv.org/abs/2601.22136"><img height="18" src="https://img.shields.io/badge/arXiv-2601.22136-B31B1B?style=flat-square&logo=arxiv&logoColor=white" alt="arXiv"></a> <img height="18" src="https://img.shields.io/badge/NeurIPS_2026-JUDGe_%26_IAB_Workshops-1F6FEB?style=flat-square" alt="NeurIPS 2026 workshops"></h3>
 <p><b>Benchmark for when autonomous code agents go rogue</b></p>
 <p>Co-authored. 9,429 labeled agent trajectories with temporal metrics that score how early a monitor flags unsafe behavior. Early flagging cut monitoring cost by roughly 75% against end-of-run review, and a high-recall detector can still intervene too late to be useful.</p>
-<p><img src="https://img.shields.io/badge/Agent_monitoring-37474F?style=flat-square" alt="Agent monitoring"> <img src="https://img.shields.io/badge/Benchmark_design-37474F?style=flat-square" alt="Benchmark design"> <img src="https://img.shields.io/badge/AI_control-37474F?style=flat-square" alt="AI control"></p>
+<p><img src="https://img.shields.io/badge/Agent_monitoring-F1F3F5?style=flat-square" alt="Agent monitoring"> <img src="https://img.shields.io/badge/Benchmark_design-F1F3F5?style=flat-square" alt="Benchmark design"> <img src="https://img.shields.io/badge/AI_control-F1F3F5?style=flat-square" alt="AI control"></p>
 </td>
 </tr>
 <tr>
 <td valign="top">
-<h3><a href="https://www.lesswrong.com/posts/5qPxQsM4vtTirN3np">Can AI agents investigate a real email breach?</a> &nbsp; <a href="https://www.lesswrong.com/posts/5qPxQsM4vtTirN3np"><img src="https://img.shields.io/badge/LessWrong-Write--up-6E6E6E?style=flat-square" alt="LessWrong write-up"></a> <img src="https://img.shields.io/badge/MATS-Summer_2026_%C2%B7_Asymmetric_Security-1F6FEB?style=flat-square" alt="MATS Summer 2026, Asymmetric Security stream"></h3>
+<h3><a href="https://www.lesswrong.com/posts/5qPxQsM4vtTirN3np">Can AI agents investigate a real email breach?</a> &nbsp; <a href="https://www.lesswrong.com/posts/5qPxQsM4vtTirN3np"><img height="18" src="https://img.shields.io/badge/LessWrong-Write--up-6E6E6E?style=flat-square" alt="LessWrong write-up"></a> <img height="18" src="https://img.shields.io/badge/MATS-Summer_2026_%C2%B7_Asymmetric_Security-1F6FEB?style=flat-square" alt="MATS Summer 2026, Asymmetric Security stream"></h3>
 <p><b>Frontier agents on real business-email-compromise incidents, scored against human responders</b></p>
 <p>Sandboxed harness that runs five frontier models on two real BEC cases. Only 1 of 30 runs named every compromised account without accusing an innocent one, and three models scored at least 50% lower on the second case than on the first. Most lost points were judgment errors, not retrieval failures. The harness also generates new tasks with their own grading criteria, so coverage isn't capped by hand-written answer keys.</p>
-<p><img src="https://img.shields.io/badge/Agent_evals-37474F?style=flat-square" alt="Agent evals"> <img src="https://img.shields.io/badge/Cyber_defense-37474F?style=flat-square" alt="Cyber defense"> <img src="https://img.shields.io/badge/Benchmark_generation-37474F?style=flat-square" alt="Benchmark generation"> <img src="https://img.shields.io/badge/KQL-37474F?style=flat-square" alt="KQL"></p>
+<p><img src="https://img.shields.io/badge/Agent_evals-F1F3F5?style=flat-square" alt="Agent evals"> <img src="https://img.shields.io/badge/Cyber_defense-F1F3F5?style=flat-square" alt="Cyber defense"> <img src="https://img.shields.io/badge/Benchmark_generation-F1F3F5?style=flat-square" alt="Benchmark generation"> <img src="https://img.shields.io/badge/KQL-F1F3F5?style=flat-square" alt="KQL"></p>
 </td>
 </tr>
 <tr>
 <td valign="top">
-<h3>A Survey of Multi-Agent Reinforcement Learning in Cybersecurity &nbsp; <img src="https://img.shields.io/badge/Under_review-2026-6E6E6E?style=flat-square" alt="Under review, 2026"> <img src="https://img.shields.io/badge/Preprint-Forthcoming-6E6E6E?style=flat-square" alt="Preprint forthcoming"></h3>
+<h3>A Survey of Multi-Agent Reinforcement Learning in Cybersecurity &nbsp; <img height="18" src="https://img.shields.io/badge/Under_review-2026-6E6E6E?style=flat-square" alt="Under review, 2026"> <img height="18" src="https://img.shields.io/badge/Preprint-Forthcoming-6E6E6E?style=flat-square" alt="Preprint forthcoming"></h3>
 <p><b>Taxonomy of threat models, environments and evaluation suites for MARL in cyber defense</b></p>
 <p>With the University of Arizona. Organizes 200+ papers by threat model, simulation environment and evaluation suite.</p>
-<p><img src="https://img.shields.io/badge/Multi--agent_RL-37474F?style=flat-square" alt="Multi-agent RL"> <img src="https://img.shields.io/badge/Cyber_defense-37474F?style=flat-square" alt="Cyber defense"> <img src="https://img.shields.io/badge/Survey-37474F?style=flat-square" alt="Survey"></p>
+<p><img src="https://img.shields.io/badge/Multi--agent_RL-F1F3F5?style=flat-square" alt="Multi-agent RL"> <img src="https://img.shields.io/badge/Cyber_defense-F1F3F5?style=flat-square" alt="Cyber defense"> <img src="https://img.shields.io/badge/Survey-F1F3F5?style=flat-square" alt="Survey"></p>
 </td>
 </tr>
 </table>
