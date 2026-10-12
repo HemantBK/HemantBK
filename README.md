@@ -17,7 +17,7 @@ MATS Summer 2026 fellow (Asymmetric Security stream).
 <table>
 <tr>
 <td valign="top">
-<h3><a href="https://arxiv.org/abs/2601.22136">StepShield: When, Not Whether to Intervene on Rogue Agents</a> &nbsp; <a href="https://arxiv.org/abs/2601.22136"><img height="18" src="https://img.shields.io/badge/arXiv-2601.22136-B31B1B?style=flat-square&logo=arxiv&logoColor=white" alt="arXiv"></a> <img height="18" src="https://img.shields.io/badge/NeurIPS_2026-JUDGe_%26_IAB_Workshops-1F6FEB?style=flat-square" alt="NeurIPS 2026 workshops"></h3>
+<h3><a href="https://arxiv.org/abs/2601.22136">StepShield: When, Not Whether to Intervene on Rogue Agents</a> &nbsp; <img height="18" src="https://img.shields.io/badge/NeurIPS_2026-JUDGe_%26_IAB_Workshops-1F6FEB?style=flat-square" alt="NeurIPS 2026 workshops"></h3>
 <p><b>Benchmark for when autonomous code agents go rogue</b></p>
 <p>Co-authored. 9,429 labeled agent trajectories with temporal metrics that score how early a monitor flags unsafe behavior. Early flagging cut monitoring cost by roughly 75% against end-of-run review, and a high-recall detector can still intervene too late to be useful.</p>
 <p><img src="https://img.shields.io/badge/Agent_monitoring-F1F3F5?style=flat-square" alt="Agent monitoring"> <img src="https://img.shields.io/badge/Benchmark_design-F1F3F5?style=flat-square" alt="Benchmark design"> <img src="https://img.shields.io/badge/AI_control-F1F3F5?style=flat-square" alt="AI control"></p>
