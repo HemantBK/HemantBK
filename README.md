@@ -35,49 +35,42 @@ Sandboxed harness that runs five frontier models on two real business-email-comp
 
 Taxonomy of threat models, simulation environments and evaluation suites from 200+ papers.
 
-## Open source
+## Projects
 
-### [MLShield](https://github.com/HemantBK/mlshield)
+### Agent and model security
 
-Weight-exfiltration detection for Kubernetes ML clusters.
+| Project | What it does | Stack |
+|---|---|---|
+| **[MLShield](https://github.com/HemantBK/mlshield)** | Weight-exfiltration detection for Kubernetes ML clusters. Three-layer cascade (rules → LSTM + isolation forest → LLM judge) over k8s audit logs, GPU telemetry and app events; adapts StepShield's early-intervention metric to infrastructure events. On 2,200 synthetic trajectories the rules layer clears ~94% of events at microsecond latency. 117 tests, CI, Helm chart, documented threat model. | ![](https://img.shields.io/badge/Python-6E6E6E?style=flat-square) ![](https://img.shields.io/badge/PyTorch-6E6E6E?style=flat-square) ![](https://img.shields.io/badge/Kubernetes-6E6E6E?style=flat-square) ![](https://img.shields.io/badge/Helm-6E6E6E?style=flat-square) ![](https://img.shields.io/badge/Prometheus-6E6E6E?style=flat-square) |
+| **[LLM Eval Pipeline](https://github.com/HemantBK/llm-eval-pipeline)** | Evaluation and red-teaming harness for production LLM deployments. Runs prompt suites against four providers, scores outputs with an LLM judge, and keeps running when a provider fails (circuit breaker, dead-letter queue). | ![](https://img.shields.io/badge/Python-6E6E6E?style=flat-square) ![](https://img.shields.io/badge/FastAPI-6E6E6E?style=flat-square) ![](https://img.shields.io/badge/Redis-6E6E6E?style=flat-square) ![](https://img.shields.io/badge/Prometheus-6E6E6E?style=flat-square) ![](https://img.shields.io/badge/Grafana-6E6E6E?style=flat-square) |
+| **[Chatbot Auditor](https://github.com/HemantBK/chatbot-auditor)** | Analyzes conversation logs from deployed chatbots to find where they underperform or behave unsafely. | ![](https://img.shields.io/badge/Python-6E6E6E?style=flat-square) ![](https://img.shields.io/badge/LLM--as--judge-6E6E6E?style=flat-square) |
 
-Three-layer cascade (rules → LSTM + isolation forest → LLM judge) over k8s audit logs, GPU telemetry and app events. Adapts StepShield's early-intervention metric to infrastructure event streams. 117 tests, CI, Helm chart, documented threat model. Evaluated on 2,200 synthetic trajectories: the rules layer clears ~94% of events at microsecond latency; limitations and benchmark output are in the repo.
+### Responsible AI
 
-### [LLM Eval Pipeline](https://github.com/HemantBK/llm-eval-pipeline)
+| Project | What it does | Stack |
+|---|---|---|
+| **[LLM Bias Sentinel](https://github.com/HemantBK/llm-bias-sentinel)** | Seven-benchmark bias evaluation with red-teaming, guardrails and monitoring, running fully local via Ollama. | ![](https://img.shields.io/badge/Python-6E6E6E?style=flat-square) ![](https://img.shields.io/badge/Ollama-6E6E6E?style=flat-square) ![](https://img.shields.io/badge/Guardrails-6E6E6E?style=flat-square) |
+| **[Credit Scoring Fairness MLOps](https://github.com/HemantBK/credit-scoring-fairness-mlops)** | End-to-end MLOps pipeline with automated fairness gates, drift monitoring and EU AI Act compliance checks. | ![](https://img.shields.io/badge/XGBoost-6E6E6E?style=flat-square) ![](https://img.shields.io/badge/Fairlearn-6E6E6E?style=flat-square) ![](https://img.shields.io/badge/MLflow-6E6E6E?style=flat-square) |
+| **[Healthcare Bias Audit](https://github.com/HemantBK/healthcare-bias-audit)** | Bias audit of healthcare ML on the MEPS dataset, with AIF360 mitigation and SHAP/LIME explainability. | ![](https://img.shields.io/badge/AIF360-6E6E6E?style=flat-square) ![](https://img.shields.io/badge/SHAP-6E6E6E?style=flat-square) ![](https://img.shields.io/badge/LIME-6E6E6E?style=flat-square) |
 
-Evaluation and red-teaming harness for production LLM deployments.
+### LLM systems
 
-Runs prompt suites against four LLM providers and scores the outputs with an LLM judge. Built to keep running when a provider fails (circuit breaker, dead-letter queue) and to be watched in production (Prometheus/Grafana).
+| Project | What it does | Stack |
+|---|---|---|
+| **[AI Chief](https://github.com/HemantBK/AI-Chief)** | Food-science assistant with multi-agent RAG and real-time dangerous-advice detection. | ![](https://img.shields.io/badge/TypeScript-6E6E6E?style=flat-square) ![](https://img.shields.io/badge/Fastify-6E6E6E?style=flat-square) ![](https://img.shields.io/badge/HNSW-6E6E6E?style=flat-square) |
+| **[AI Wildlife Tracker](https://github.com/HemantBK/AI-Wildlife-Tracker)** | RAG that identifies 500+ Indian wildlife species from text or photos; hybrid retrieval, ONNX inference, Langfuse observability. | ![](https://img.shields.io/badge/Python-6E6E6E?style=flat-square) ![](https://img.shields.io/badge/ONNX-6E6E6E?style=flat-square) ![](https://img.shields.io/badge/Langfuse-6E6E6E?style=flat-square) |
+| **[RideShala](https://github.com/HemantBK/rideshala)** | RAG motorcycle advisor for Indian riders with cited recommendations. | ![](https://img.shields.io/badge/vLLM-6E6E6E?style=flat-square) ![](https://img.shields.io/badge/Qdrant-6E6E6E?style=flat-square) ![](https://img.shields.io/badge/FastAPI-6E6E6E?style=flat-square) |
+| **[AI Voice Assistant](https://github.com/HemantBK/AI-Voice-Assistant)** | Fully local STT → LLM → TTS pipeline; no cloud calls. | ![](https://img.shields.io/badge/FastAPI-6E6E6E?style=flat-square) ![](https://img.shields.io/badge/React-6E6E6E?style=flat-square) ![](https://img.shields.io/badge/Docker-6E6E6E?style=flat-square) |
+| **[Multilingual Audiobook Assistant](https://github.com/HemantBK/Interactive-Multilingual-AI-Audiobook-Assistant)** | OCR → neural TTS → translation → real-time Q&A over the text. | ![](https://img.shields.io/badge/Python-6E6E6E?style=flat-square) ![](https://img.shields.io/badge/OCR-6E6E6E?style=flat-square) ![](https://img.shields.io/badge/TTS-6E6E6E?style=flat-square) |
 
-### [chatbot-auditor](https://github.com/HemantBK/chatbot-auditor)
+### Applied ML
 
-Analyzes conversation logs to find where deployed chatbots underperform or behave unsafely.
-
-### [LLM Bias Sentinel](https://github.com/HemantBK/llm-bias-sentinel)
-
-Seven-benchmark bias evaluation with red-teaming and guardrails, running fully local via Ollama.
-
-<details>
-<summary>Other projects</summary>
-
-**Responsible AI**
-- [credit-scoring-fairness-mlops](https://github.com/HemantBK/credit-scoring-fairness-mlops) — MLOps pipeline with automated fairness gates, drift monitoring and EU AI Act compliance checks.
-- [healthcare-bias-audit](https://github.com/HemantBK/healthcare-bias-audit) — bias audit of healthcare ML on MEPS; AIF360 mitigation, SHAP/LIME explainability.
-
-**LLM systems**
-- [AI-Chief](https://github.com/HemantBK/AI-Chief) — multi-agent RAG food-science assistant with real-time dangerous-advice detection.
-- [AI-Wildlife-Tracker](https://github.com/HemantBK/AI-Wildlife-Tracker) — RAG over 500+ Indian wildlife species; hybrid retrieval, ONNX inference, Langfuse observability.
-- [RideShala](https://github.com/HemantBK/rideshala) — RAG motorcycle advisor; vLLM serving, Qdrant, cited recommendations.
-- [AI-Voice-Assistant](https://github.com/HemantBK/AI-Voice-Assistant) — fully local STT → LLM → TTS pipeline, no cloud calls.
-- [Interactive-Multilingual-AI-Audiobook-Assistant](https://github.com/HemantBK/Interactive-Multilingual-AI-Audiobook-Assistant) — OCR → TTS → translation → Q&A.
-
-**Applied ML**
-- [Multilingual-Sentiment-Emotion-Intelligence-Engine](https://github.com/HemantBK/Multilingual-Sentiment-Emotion-Intelligence-Engine) — multi-task XLM-RoBERTa with LoRA, five languages plus Hindi-English code-switching, ONNX INT8.
-- [LLaMA-Sum-Fine-Tuning](https://github.com/HemantBK/LLaMA-Sum-Fine-Tuning) — LLaMA 3.2 1B QLoRA fine-tune; +40% ROUGE-2 over base on CNN/DailyMail.
-- [dynamic-pricing-engine](https://github.com/HemantBK/dynamic-pricing-engine) — XGBoost demand forecasting, elasticity estimation, revenue optimization; MLflow, Evidently.
-- [Algorithmic-Trading-AI](https://github.com/HemantBK/Algorithmic-Trading-AI) — FinBERT + spaCy NER + TimeGPT signals from financial news.
-
-</details>
+| Project | What it does | Stack |
+|---|---|---|
+| **[Multilingual Sentiment Engine](https://github.com/HemantBK/Multilingual-Sentiment-Emotion-Intelligence-Engine)** | Multi-task XLM-RoBERTa with LoRA adapters for five languages plus Hindi-English code-switching; ONNX INT8 inference. | ![](https://img.shields.io/badge/XLM--RoBERTa-6E6E6E?style=flat-square) ![](https://img.shields.io/badge/LoRA-6E6E6E?style=flat-square) ![](https://img.shields.io/badge/ONNX-6E6E6E?style=flat-square) |
+| **[LLaMA Summarization Fine-tune](https://github.com/HemantBK/LLaMA-Sum-Fine-Tuning)** | LLaMA 3.2 1B fine-tuned with QLoRA; +40% ROUGE-2 over base on CNN/DailyMail. | ![](https://img.shields.io/badge/LLaMA-6E6E6E?style=flat-square) ![](https://img.shields.io/badge/QLoRA-6E6E6E?style=flat-square) ![](https://img.shields.io/badge/HuggingFace-6E6E6E?style=flat-square) |
+| **[Dynamic Pricing Engine](https://github.com/HemantBK/dynamic-pricing-engine)** | XGBoost demand forecasting, price-elasticity estimation and revenue optimization; MLflow tracking, Evidently drift monitoring. | ![](https://img.shields.io/badge/XGBoost-6E6E6E?style=flat-square) ![](https://img.shields.io/badge/MLflow-6E6E6E?style=flat-square) ![](https://img.shields.io/badge/Evidently-6E6E6E?style=flat-square) |
+| **[Algorithmic Trading AI](https://github.com/HemantBK/Algorithmic-Trading-AI)** | BUY/SELL/HOLD signals from financial news using FinBERT sentiment, spaCy NER and TimeGPT forecasting. | ![](https://img.shields.io/badge/FinBERT-6E6E6E?style=flat-square) ![](https://img.shields.io/badge/spaCy-6E6E6E?style=flat-square) ![](https://img.shields.io/badge/TimeGPT-6E6E6E?style=flat-square) |
 
 ## Skills
 
