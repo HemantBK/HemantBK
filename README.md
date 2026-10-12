@@ -1,255 +1,80 @@
 <h1 align="center">Hemant Kumar B K</h1>
 
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&pause=1000&color=22C55E&center=true&vCenter=true&width=600&lines=ML+Engineer+%7C+AI+Safety+Researcher;Multi-Agent+RL+%C2%B7+LLM+Safety+%C2%B7+RAG;PyTorch+%C2%B7+AWS+%C2%B7+Docker+%C2%B7+FastAPI" alt="Typing SVG" />
-</p>
+<h3 align="center">Research Engineer · AI Control & Security</h3>
 
 <p align="center">
-  <a href="https://linkedin.com/in/hemantbk"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-  <a href="mailto:hemantkumar.bk@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-  <a href="https://scholar.google.com/citations?user=de9T90IAAAAJ&hl=en"><img src="https://img.shields.io/badge/Google_Scholar-4285F4?style=for-the-badge&logo=googlescholar&logoColor=white" alt="Google Scholar"/></a>
+  <a href="https://linkedin.com/in/hemantbk"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logoColor=white" alt="LinkedIn"></a>
+  <a href="mailto:hemantkumar.bk@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
+  <a href="https://scholar.google.com/citations?user=YOUR_ID"><img src="https://img.shields.io/badge/Google_Scholar-4285F4?style=for-the-badge&logo=googlescholar&logoColor=white" alt="Google Scholar"></a>
 </p>
 
----
+I work on evaluating and monitoring autonomous AI agents, for AI control and cyber defense: benchmarks whose answer keys hold up, and detectors that flag an agent going rogue early enough to matter.
 
-I work on evaluation and runtime monitoring of autonomous AI agents, mainly for cyber defense: benchmarks whose answer keys hold up, and detectors that flag an agent going rogue early enough to matter.
- 
-MATS Summer 2026 fellow (Asymmetric Security stream). Previously ML engineering at Escape LLC and Omdena.
+MATS Summer 2026 fellow (Asymmetric Security stream).
 
----
+## Research
 
-## 🔬 Research
+**StepShield: When, Not Whether to Intervene on Rogue Agents** — co-author
+[![arXiv](https://img.shields.io/badge/arXiv-2601.22136-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2601.22136)
+![NeurIPS 2026](https://img.shields.io/badge/NeurIPS_2026-JUDGe_%26_IAB_Workshops_·_Poster-1f6feb?style=flat-square)
+Benchmark of 9,429 labeled agent trajectories with temporal metrics that score *when* a monitor flags unsafe behavior, not just whether. Early flagging cut monitoring cost by roughly 75% against end-of-run review, and a high-recall detector can still intervene too late to be useful.
 
-<table>
-<tr>
-<td>
+**Can AI agents investigate a real email breach?**
+![MATS](https://img.shields.io/badge/MATS-Summer_2026_·_Asymmetric_Security-3b9ddd?style=flat-square)
+[![Write-up](https://img.shields.io/badge/LessWrong-Write--up-5a5a5a?style=flat-square)](https://www.lesswrong.com/posts/5qPxQsM4vtTirN3np)
+Sandboxed harness that runs five frontier models on two real business-email-compromise cases and scores them against what human responders found. Only 1 of 30 runs named every compromised account without accusing an innocent one; three models lost half or more of their score between the two cases. Most lost points were judgment errors (who was compromised, how access was gained), not retrieval failures. The harness also generates new tasks along with their grading criteria, so coverage isn't capped by hand-written answer keys.
 
-### 🛡️ StepShield — *Co-Author* &nbsp; [![Paper](https://img.shields.io/badge/arXiv-2601.22136-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2601.22136) [![NeurIPS 2026](https://img.shields.io/badge/NeurIPS_2026-Accepted_·_JUDGe_%26_IAB_Workshops-blue?style=flat-square)](https://arxiv.org/abs/2601.22136)
- 
-First benchmark for evaluating when autonomous code agents go rogue — not just whether they do. Detects specification violations (data exfiltration, unauthorized access) in real-time.
- 
-`Python` `PyTorch` `LLM Safety` `Red-Teaming` `Autonomous Agents`
- 
-</td>
-</tr>
-<tr>
-<td>
-  
-### 🔍 Can AI agents investigate a real email breach? &nbsp; [![MATS](https://img.shields.io/badge/MATS-Summer_2026-0EA5E9?style=flat-square)](https://www.matsprogram.org/)
- 
-Sandboxed evaluation harness that runs frontier AI agents on real business-email-compromise incidents and scores them against what human responders found.
- 
-Complete details here: [lesswrong.com/posts/5qPxQsM4vtTirN3np](https://www.lesswrong.com/posts/5qPxQsM4vtTirN3np/can-ai-agents-investigate-a-real-email-breach-1)
- 
-`Benchmark` `AI Security` `KQL` `Agent Evals` `Cyber Defense`
+**A Survey of Multi-Agent Reinforcement Learning in Cybersecurity**
+![Status](https://img.shields.io/badge/University_of_Arizona-Under_review_2026-5a5a5a?style=flat-square)
+Taxonomy of threat models, simulation environments and evaluation suites from 200+ papers.
 
-</td>
-</tr>
-</table>
+## Open source
 
----
+**[MLShield](https://github.com/HemantBK/mlshield)** — weight-exfiltration detection for Kubernetes ML clusters.
+Three-layer cascade (rules → LSTM + isolation forest → LLM judge) over k8s audit logs, GPU telemetry and app events. Adapts StepShield's early-intervention metric to infrastructure event streams. 117 tests, CI, Helm chart, documented threat model. Evaluated on 2,200 synthetic trajectories: the rules layer clears ~94% of events at microsecond latency; limitations and benchmark output are in the repo.
 
-## 🚀 Featured Projects
+**[LLM Eval Pipeline](https://github.com/HemantBK/llm-eval-pipeline)** — evaluation and red-teaming harness for production LLM deployments.
+Runs prompt suites against four LLM providers and scores the outputs with an LLM judge. Built to keep running when a provider fails (circuit breaker, dead-letter queue) and to be watched in production (Prometheus/Grafana).
 
-<table>
-<tr>
-<td width="50%" valign="top">
+**[chatbot-auditor](https://github.com/HemantBK/chatbot-auditor)** — analyzes conversation logs to find where deployed chatbots underperform or behave unsafely.
 
-### 🛡️ LLM Eval Pipeline
-**Production-grade LLM evaluation + red-teaming**
+**[LLM Bias Sentinel](https://github.com/HemantBK/llm-bias-sentinel)** — seven-benchmark bias evaluation with red-teaming and guardrails, running fully local via Ollama.
 
-Hybrid n8n + FastAPI architecture with 4 LLM providers, LLM-as-Judge scoring, circuit breaker, DLQ, Redis caching, Prometheus/Grafana monitoring.
+<details>
+<summary>Other projects</summary>
 
-`Python` `FastAPI` `Redis` `Prometheus` `Red-Teaming`
+**Responsible AI**
+- [credit-scoring-fairness-mlops](https://github.com/HemantBK/credit-scoring-fairness-mlops) — MLOps pipeline with automated fairness gates, drift monitoring and EU AI Act compliance checks.
+- [healthcare-bias-audit](https://github.com/HemantBK/healthcare-bias-audit) — bias audit of healthcare ML on MEPS; AIF360 mitigation, SHAP/LIME explainability.
 
-[![Code](https://img.shields.io/badge/GitHub-Repo-181717?style=flat-square&logo=github)](https://github.com/HemantBK/llm-eval-pipeline)
+**LLM systems**
+- [AI-Chief](https://github.com/HemantBK/AI-Chief) — multi-agent RAG food-science assistant with real-time dangerous-advice detection.
+- [AI-Wildlife-Tracker](https://github.com/HemantBK/AI-Wildlife-Tracker) — RAG over 500+ Indian wildlife species; hybrid retrieval, ONNX inference, Langfuse observability.
+- [RideShala](https://github.com/HemantBK/rideshala) — RAG motorcycle advisor; vLLM serving, Qdrant, cited recommendations.
+- [AI-Voice-Assistant](https://github.com/HemantBK/AI-Voice-Assistant) — fully local STT → LLM → TTS pipeline, no cloud calls.
+- [Interactive-Multilingual-AI-Audiobook-Assistant](https://github.com/HemantBK/Interactive-Multilingual-AI-Audiobook-Assistant) — OCR → TTS → translation → Q&A.
 
-</td>
-<td width="50%" valign="top">
+**Applied ML**
+- [Multilingual-Sentiment-Emotion-Intelligence-Engine](https://github.com/HemantBK/Multilingual-Sentiment-Emotion-Intelligence-Engine) — multi-task XLM-RoBERTa with LoRA, five languages plus Hindi-English code-switching, ONNX INT8.
+- [LLaMA-Sum-Fine-Tuning](https://github.com/HemantBK/LLaMA-Sum-Fine-Tuning) — LLaMA 3.2 1B QLoRA fine-tune; +40% ROUGE-2 over base on CNN/DailyMail.
+- [dynamic-pricing-engine](https://github.com/HemantBK/dynamic-pricing-engine) — XGBoost demand forecasting, elasticity estimation, revenue optimization; MLflow, Evidently.
+- [Algorithmic-Trading-AI](https://github.com/HemantBK/Algorithmic-Trading-AI) — FinBERT + spaCy NER + TimeGPT signals from financial news.
 
-### 🔐 MLShield
-**ML-infra-aware defense for model weights**
+</details>
 
-Protects against model-weight exfiltration using a 3-layer cascaded architecture (Rules → ML → LLM). Kubernetes-native, GPU-aware anomaly detection.
+## Skills
 
-`Python` `Kubernetes` `Model Security` `Anomaly Detection`
-
-[![Code](https://img.shields.io/badge/GitHub-Repo-181717?style=flat-square&logo=github)](https://github.com/HemantBK/MLShield)
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### ⚖️ LLM Bias Sentinel
-**7-benchmark bias evaluation + guardrails**
-
-Open-source LLM bias evaluation framework with red-teaming, guardrails, and monitoring — all running locally via Ollama. Zero API costs.
-
-`Python` `Ollama` `Red-Teaming` `Guardrails` `Responsible AI`
-
-[![Code](https://img.shields.io/badge/GitHub-Repo-181717?style=flat-square&logo=github)](https://github.com/HemantBK/llm-bias-sentinel)
-
-</td>
-<td width="50%" valign="top">
-
-### 💰 Dynamic Pricing Engine
-**Production-grade ML pricing system**
-
-XGBoost demand forecasting + price elasticity estimation + scipy revenue optimization. FastAPI serving, Streamlit dashboard, MLflow tracking, Evidently drift monitoring.
-
-`Python` `XGBoost` `FastAPI` `MLflow` `Streamlit`
-
-[![Code](https://img.shields.io/badge/GitHub-Repo-181717?style=flat-square&logo=github)](https://github.com/HemantBK/dynamic-pricing-engine)
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 🗣️ AI Voice Assistant
-**Full-stack speech pipeline: STT → LLM → TTS**
-
-End-to-end voice assistant running entirely on your own machine — FastAPI backend, React frontend, Docker. Private by design: zero cloud calls.
-
-`Python` `FastAPI` `React` `Docker` `LLM`
-
-[![Code](https://img.shields.io/badge/GitHub-Repo-181717?style=flat-square&logo=github)](https://github.com/HemantBK/AI-Voice-Assistant)
-
-</td>
-<td width="50%" valign="top">
-
-### 🏍️ RideShala
-**AI motorcycle advisor for Indian riders**
-
-RAG over motorcycle specs with vLLM serving, Qdrant vector store, FastAPI. Personalized bike recommendations with source citations.
-
-`Python` `vLLM` `RAG` `Qdrant` `FastAPI`
-
-[![Code](https://img.shields.io/badge/GitHub-Repo-181717?style=flat-square&logo=github)](https://github.com/HemantBK/RideShala)
-
-</td>
-</tr>
-</table>
+| | |
+|---|---|
+| **Evaluation & safety** | ![](https://img.shields.io/badge/Agent_monitoring-8B1A1A?style=flat-square) ![](https://img.shields.io/badge/LLM_%26_agent_benchmarking-8B1A1A?style=flat-square) ![](https://img.shields.io/badge/Benchmark_%26_grader_design-8B1A1A?style=flat-square) ![](https://img.shields.io/badge/Automated_scoring-8B1A1A?style=flat-square) ![](https://img.shields.io/badge/Capability_elicitation-8B1A1A?style=flat-square) ![](https://img.shields.io/badge/Red_teaming-8B1A1A?style=flat-square) ![](https://img.shields.io/badge/Alignment_evaluation-8B1A1A?style=flat-square) ![](https://img.shields.io/badge/A%2FB_testing_%26_statistics-8B1A1A?style=flat-square) |
+| **Languages** | ![](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![](https://img.shields.io/badge/SQL-336791?style=flat-square&logo=postgresql&logoColor=white) ![](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white) ![](https://img.shields.io/badge/KQL-0078D4?style=flat-square) |
+| **ML / DL** | ![](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white) ![](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white) ![](https://img.shields.io/badge/Hugging_Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black) ![](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white) ![](https://img.shields.io/badge/QLoRA_%2F_LoRA-6E6E6E?style=flat-square) ![](https://img.shields.io/badge/ONNX-005CED?style=flat-square&logo=onnx&logoColor=white) |
+| **LLMs & agents** | ![](https://img.shields.io/badge/vLLM-6B46C1?style=flat-square) ![](https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white) ![](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white) ![](https://img.shields.io/badge/CrewAI-000000?style=flat-square) ![](https://img.shields.io/badge/RAG-6E6E6E?style=flat-square) |
+| **Infrastructure** | ![](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white) ![](https://img.shields.io/badge/Helm-0F1689?style=flat-square&logo=helm&logoColor=white) ![](https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=mlflow&logoColor=white) ![](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white) |
+| **Cloud** | ![](https://img.shields.io/badge/AWS_(EC2,_S3,_Lambda,_SageMaker)-FF9900?style=flat-square&logo=amazonwebservices&logoColor=black) ![](https://img.shields.io/badge/GCP_(Vertex_AI)-4285F4?style=flat-square&logo=googlecloud&logoColor=white) |
+| **Observability** | ![](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white) ![](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white) ![](https://img.shields.io/badge/Evidently-D32F2F?style=flat-square) ![](https://img.shields.io/badge/Langfuse-3B3B3B?style=flat-square) |
+| **Security** | ![](https://img.shields.io/badge/Sandboxed_tool_execution-2E7D32?style=flat-square) ![](https://img.shields.io/badge/CTF_challenges-2E7D32?style=flat-square) ![](https://img.shields.io/badge/OverTheWire-2E7D32?style=flat-square) ![](https://img.shields.io/badge/Applied_cryptography-2E7D32?style=flat-square) |
 
 ---
 
-## 📂 All Projects
-
-### 🛡️ AI Safety & Responsible AI
-
-- **[chatbot-auditor](https://github.com/HemantBK/chatbot-auditor)** — Quality auditor for AI chatbots; analyzes conversation logs to surface where bots underperform.
-- **[credit-scoring-fairness-mlops](https://github.com/HemantBK/credit-scoring-fairness-mlops)** — End-to-end MLOps with automated fairness gates, drift monitoring, EU AI Act compliance (XGBoost, Fairlearn, MLflow).
-- **[healthcare-bias-audit](https://github.com/HemantBK/healthcare-bias-audit)** — Bias audit of healthcare ML on the MEPS dataset; AIF360 mitigation, SHAP/LIME explainability.
-
-### 🤖 LLM Systems & RAG
-
-- **[AI-Chief](https://github.com/HemantBK/AI-Chief)** — Food science assistant with multi-agent RAG, real-time safety monitoring, dangerous-advice detection (TypeScript, Fastify, HNSW).
-- **[Interactive-Multilingual-AI-Audiobook-Assistant](https://github.com/HemantBK/Interactive-Multilingual-AI-Audiobook-Assistant)** — OCR extraction → neural TTS → multilingual translation → real-time Q&A audiobook pipeline.
-- **[AI-Wildlife-Tracker](https://github.com/HemantBK/AI-Wildlife-Tracker)** — RAG identifying 500+ Indian wildlife species from text or photos; hybrid retrieval, ONNX inference, Langfuse observability.
-
-### ⚙️ Applied ML & MLOps
-
-- **[Multilingual-Sentiment-Emotion-Intelligence-Engine](https://github.com/HemantBK/Multilingual-Sentiment-Emotion-Intelligence-Engine)** — 5 languages + Hindi-English code-switching; multi-task XLM-RoBERTa with LoRA adapters, ONNX INT8.
-- **[Algorithmic-Trading-AI](https://github.com/HemantBK/Algorithmic-Trading-AI)** — FinBERT sentiment + spaCy NER + TimeGPT forecasting → BUY/SELL/HOLD signals from real-time financial news.
-- **[LLaMA-Sum-Fine-Tuning](https://github.com/HemantBK/LLaMA-Sum-Fine-Tuning)** — LLaMA 3.2 1B fine-tuned via QLoRA; 40%+ ROUGE-2 improvement over base on CNN/DailyMail.
-
----
-
-## 🛠️ Tech Stack
-
-<table>
-<tr>
-<td><b>💻 Languages</b></td>
-<td>
-
-![Python](https://img.shields.io/badge/Python-3670A0?style=flat-square&logo=python&logoColor=ffdd54)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-336791?style=flat-square&logo=postgresql&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white)
-
-</td>
-</tr>
-<tr>
-<td><b>🤖 ML / DL</b></td>
-<td>
-
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
-![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
-![scikit-learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
-![W&B](https://img.shields.io/badge/W%26B-FFBE00?style=flat-square&logo=weightsandbiases&logoColor=black)
-
-</td>
-</tr>
-<tr>
-<td><b>🧠 LLM & Agents</b></td>
-<td>
-
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
-![vLLM](https://img.shields.io/badge/vLLM-7C3AED?style=flat-square&logoColor=white)
-![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white)
-![ONNX](https://img.shields.io/badge/ONNX-005CED?style=flat-square&logo=onnx&logoColor=white)
-![CrewAI](https://img.shields.io/badge/CrewAI-000000?style=flat-square&logoColor=white)
-![RAG](https://img.shields.io/badge/RAG-7C3AED?style=flat-square&logoColor=white)
-
-</td>
-</tr>
-<tr>
-<td><b>🛠️ MLOps / Cloud</b></td>
-<td>
-
-![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazon-aws&logoColor=white)
-![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=google-cloud&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=mlflow&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white)
-
-</td>
-</tr>
-<tr>
-<td><b>📊 Observability</b></td>
-<td>
-
-![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
-![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
-![Evidently](https://img.shields.io/badge/Evidently-ED0606?style=flat-square&logoColor=white)
-![Langfuse](https://img.shields.io/badge/Langfuse-4B5563?style=flat-square&logoColor=white)
-
-</td>
-</tr>
-<tr>
-<td><b>🛡️ AI Safety & Responsible AI</b></td>
-<td>
-
-![Red Teaming](https://img.shields.io/badge/Red_Teaming-B91C1C?style=flat-square&logoColor=white)
-![AIF360](https://img.shields.io/badge/AIF360-2563EB?style=flat-square&logoColor=white)
-![Fairlearn](https://img.shields.io/badge/Fairlearn-0EA5E9?style=flat-square&logoColor=white)
-![SHAP](https://img.shields.io/badge/SHAP-8B5CF6?style=flat-square&logoColor=white)
-![Guardrails](https://img.shields.io/badge/Guardrails-059669?style=flat-square&logoColor=white)
-
-</td>
-</tr>
-<tr>
-<td><b>🗄️ Data</b></td>
-<td>
-
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
-![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=power-bi&logoColor=black)
-![Tableau](https://img.shields.io/badge/Tableau-E97627?style=flat-square&logo=tableau&logoColor=white)
-
-</td>
-</tr>
-</table>
-
----
-
-<p align="center">
-  <b>Open to ML Engineer, AI Safety, and AI Researcher roles</b><br/>
-  <i>Let's build AI systems that are powerful AND trustworthy.</i>
-</p>
+Looking for research engineer roles in AI safety and security. Based in Bengaluru, open to relocation or remote, available now.
