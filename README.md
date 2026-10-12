@@ -12,7 +12,7 @@
 
 ---
 
-**ML Engineer building production-grade AI systems with safety at the core.** Currently researching Multi-Agent RL for cybersecurity at the University of Arizona and co-authoring [StepShield](https://arxiv.org/abs/2601.22136) — a safety benchmark for autonomous code agents. Previously built recommendation engines at Escape LLC (30% engagement lift) and agentic RAG chatbots at Omdena (95% reduction in harmful responses).
+**ML Engineer building production-grade AI systems with safety at the core.** MATS Summer 2026 fellow. Co-author of [StepShield](https://arxiv.org/abs/2601.22136), a safety benchmark for autonomous code agents. Previously built recommendation engines at Escape LLC and agentic RAG chatbots at Omdena.
 
 **I don't treat AI safety as a checkbox — I treat it as an engineering discipline.**
 
@@ -24,11 +24,23 @@
 <tr>
 <td>
 
-### 🛡️ StepShield — *Co-Author* &nbsp; [![Paper](https://img.shields.io/badge/arXiv-2601.22136-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2601.22136) [![ICML 2027](https://img.shields.io/badge/ICML_2027-Targeting-blue?style=flat-square)](https://arxiv.org/abs/2601.22136)
-
-First benchmark for evaluating when autonomous code agents go rogue — not just whether they do. Detects specification violations (data exfiltration, unauthorized access) in real-time across **9,429 agent trajectories**. Early detection cuts monitoring costs by **75%** (~$108M projected savings).
-
+### 🛡️ StepShield — *Co-Author* &nbsp; [![Paper](https://img.shields.io/badge/arXiv-2601.22136-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2601.22136) [![NeurIPS 2026](https://img.shields.io/badge/NeurIPS_2026-Accepted_·_JUDGe_%26_IAB_Workshops-blue?style=flat-square)](https://arxiv.org/abs/2601.22136)
+ 
+First benchmark for evaluating when autonomous code agents go rogue — not just whether they do. Detects specification violations (data exfiltration, unauthorized access) in real-time.
+ 
 `Python` `PyTorch` `LLM Safety` `Red-Teaming` `Autonomous Agents`
+ 
+</td>
+</tr>
+<tr>
+<td>
+### 🔍 Can AI agents investigate a real email breach? &nbsp; [![MATS](https://img.shields.io/badge/MATS-Summer_2026-0EA5E9?style=flat-square)](https://www.matsprogram.org/)
+ 
+Sandboxed evaluation harness that runs frontier AI agents on real business-email-compromise incidents and scores them against what human responders found.
+ 
+Complete details here: [lesswrong.com/posts/5qPxQsM4vtTirN3np](https://www.lesswrong.com/posts/5qPxQsM4vtTirN3np/can-ai-agents-investigate-a-real-email-breach-1)
+ 
+`Benchmark` `AI Security` `KQL` `Agent Evals` `Cyber Defense`
 
 </td>
 </tr>
