@@ -12,9 +12,9 @@
 
 ---
 
-**ML Engineer building production-grade AI systems with safety at the core.** MATS Summer 2026 fellow. Co-author of [StepShield](https://arxiv.org/abs/2601.22136), a safety benchmark for autonomous code agents. Previously built recommendation engines at Escape LLC and agentic RAG chatbots at Omdena.
-
-**I don't treat AI safety as a checkbox — I treat it as an engineering discipline.**
+I work on evaluation and runtime monitoring of autonomous AI agents, mainly for cyber defense: benchmarks whose answer keys hold up, and detectors that flag an agent going rogue early enough to matter.
+ 
+MATS Summer 2026 fellow (Asymmetric Security stream). Previously ML engineering at Escape LLC and Omdena.
 
 ---
 
