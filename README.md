@@ -14,31 +14,48 @@ MATS Summer 2026 fellow (Asymmetric Security stream).
 
 ## Research
 
-**StepShield: When, Not Whether to Intervene on Rogue Agents** — co-author
+### StepShield: When, Not Whether to Intervene on Rogue Agents
+
 [![arXiv](https://img.shields.io/badge/arXiv-2601.22136-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2601.22136)
 ![NeurIPS 2026](https://img.shields.io/badge/NeurIPS_2026-JUDGe_%26_IAB_Workshops_·_Poster-1f6feb?style=flat-square)
+![Role](https://img.shields.io/badge/Co--author-6E6E6E?style=flat-square)
+
 Benchmark of 9,429 labeled agent trajectories with temporal metrics that score *when* a monitor flags unsafe behavior, not just whether. Early flagging cut monitoring cost by roughly 75% against end-of-run review, and a high-recall detector can still intervene too late to be useful.
 
-**Can AI agents investigate a real email breach?**
+### Can AI agents investigate a real email breach?
+
 ![MATS](https://img.shields.io/badge/MATS-Summer_2026_·_Asymmetric_Security-3b9ddd?style=flat-square)
 [![Write-up](https://img.shields.io/badge/LessWrong-Write--up-5a5a5a?style=flat-square)](https://www.lesswrong.com/posts/5qPxQsM4vtTirN3np)
+
 Sandboxed harness that runs five frontier models on two real business-email-compromise cases and scores them against what human responders found. Only 1 of 30 runs named every compromised account without accusing an innocent one; three models lost half or more of their score between the two cases. Most lost points were judgment errors (who was compromised, how access was gained), not retrieval failures. The harness also generates new tasks along with their grading criteria, so coverage isn't capped by hand-written answer keys.
 
-**A Survey of Multi-Agent Reinforcement Learning in Cybersecurity**
+### A Survey of Multi-Agent Reinforcement Learning in Cybersecurity
+
 ![Status](https://img.shields.io/badge/University_of_Arizona-Under_review_2026-5a5a5a?style=flat-square)
+
 Taxonomy of threat models, simulation environments and evaluation suites from 200+ papers.
 
 ## Open source
 
-**[MLShield](https://github.com/HemantBK/mlshield)** — weight-exfiltration detection for Kubernetes ML clusters.
+### [MLShield](https://github.com/HemantBK/mlshield)
+
+Weight-exfiltration detection for Kubernetes ML clusters.
+
 Three-layer cascade (rules → LSTM + isolation forest → LLM judge) over k8s audit logs, GPU telemetry and app events. Adapts StepShield's early-intervention metric to infrastructure event streams. 117 tests, CI, Helm chart, documented threat model. Evaluated on 2,200 synthetic trajectories: the rules layer clears ~94% of events at microsecond latency; limitations and benchmark output are in the repo.
 
-**[LLM Eval Pipeline](https://github.com/HemantBK/llm-eval-pipeline)** — evaluation and red-teaming harness for production LLM deployments.
+### [LLM Eval Pipeline](https://github.com/HemantBK/llm-eval-pipeline)
+
+Evaluation and red-teaming harness for production LLM deployments.
+
 Runs prompt suites against four LLM providers and scores the outputs with an LLM judge. Built to keep running when a provider fails (circuit breaker, dead-letter queue) and to be watched in production (Prometheus/Grafana).
 
-**[chatbot-auditor](https://github.com/HemantBK/chatbot-auditor)** — analyzes conversation logs to find where deployed chatbots underperform or behave unsafely.
+### [chatbot-auditor](https://github.com/HemantBK/chatbot-auditor)
 
-**[LLM Bias Sentinel](https://github.com/HemantBK/llm-bias-sentinel)** — seven-benchmark bias evaluation with red-teaming and guardrails, running fully local via Ollama.
+Analyzes conversation logs to find where deployed chatbots underperform or behave unsafely.
+
+### [LLM Bias Sentinel](https://github.com/HemantBK/llm-bias-sentinel)
+
+Seven-benchmark bias evaluation with red-teaming and guardrails, running fully local via Ollama.
 
 <details>
 <summary>Other projects</summary>
