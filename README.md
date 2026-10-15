@@ -10,7 +10,6 @@
 
 I work on evaluating and monitoring autonomous AI agents, for AI control and cyber defense: benchmarks whose answer keys hold up, and detectors that flag an agent going rogue early enough to matter.
 
-MATS Summer 2026 fellow (Asymmetric Security stream).
 
 ## Research
 
