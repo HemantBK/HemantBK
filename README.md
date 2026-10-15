@@ -32,10 +32,10 @@ I work on evaluating and monitoring autonomous AI agents, for AI control and cyb
 </tr>
 <tr>
 <td valign="top">
-<h3>A Survey of Multi-Agent Reinforcement Learning in Cybersecurity &nbsp; <img height="18" src="https://img.shields.io/badge/Under_review-2026-6E6E6E?style=flat-square" alt="Under review, 2026"> <img height="18" src="https://img.shields.io/badge/Preprint-Forthcoming-6E6E6E?style=flat-square" alt="Preprint forthcoming"></h3>
-<p><b>Taxonomy of threat models, environments and evaluation suites for MARL in cyber defense</b></p>
-<p>With the University of Arizona. Organizes 200+ papers by threat model, simulation environment and evaluation suite.</p>
-<p><img src="https://img.shields.io/badge/Multi--agent_RL-F1F3F5?style=flat-square" alt="Multi-agent RL"> <img src="https://img.shields.io/badge/Cyber_defense-F1F3F5?style=flat-square" alt="Cyber defense"> <img src="https://img.shields.io/badge/Survey-F1F3F5?style=flat-square" alt="Survey"></p>
+<h3>A Survey of Multi-Agent Reinforcement Learning in Cybersecurity &nbsp; <img height="18" src="https://img.shields.io/badge/Under_review-IEEE_TAI_2026-6E6E6E?style=flat-square" alt="Under review, IEEE TAI 2026"> <img height="18" src="https://img.shields.io/badge/Preprint-Forthcoming-6E6E6E?style=flat-square" alt="Preprint forthcoming"></h3>
+<p><b>Organizing MARL for cyber defense by the defensive problem, not the algorithm</b></p>
+<p>A 209-study survey that maps seven defensive problems to the learning machinery their interaction structure requires. Finds that no system in the field is evaluated against an adversary that adapts to it, that two defensive problems have no learned system at all, and that evaluation methodology, not any single method, is the binding constraint on progress.</p>
+<p><img src="https://img.shields.io/badge/Multi--agent_RL-F1F3F5?style=flat-square" alt="Multi-agent RL"> <img src="https://img.shields.io/badge/Cyber_defense-F1F3F5?style=flat-square" alt="Cyber defense"> <img src="https://img.shields.io/badge/Evaluation-F1F3F5?style=flat-square" alt="Evaluation"> <img src="https://img.shields.io/badge/Survey-F1F3F5?style=flat-square" alt="Survey"></p>
 </td>
 </tr>
 </table>
